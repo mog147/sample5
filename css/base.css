@@ -1,0 +1,229 @@
+/* --------------------------------- */
+/* 共通 */
+
+:root {
+    --main-color: #B4CBD9;
+    --accent-color: #b00000;
+    --dark-main-color: #333;
+    --light-main-color: #fff;
+    --gray-main-color: #ececec;
+    --large-width: 1000px;
+    --middle-width: 800px;
+    --small-width:600px;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック Medium", meiryo, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    color: var(--dark-main-color);
+    background-color:var(--gray-main-color)
+}
+
+.container {
+    padding: 5rem 10rem; 
+}
+
+li {
+    list-style: none;
+    margin-right: 1rem;
+    margin: 1rem;
+
+}
+
+a {
+    color: var(--dark-main-color);
+    text-decoration: none;
+}
+
+
+/** クラス指定の末尾の文字列が[__text]だったら*/
+div[class$="__text"],
+[class*="__text "]{
+
+  line-height: 3rem;
+  text-align: center;
+}
+
+/* 共通 */
+/* --------------------------------- */
+/* --------------------------------- */
+/* header */
+
+.header {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0;
+    background: transparent;
+    z-index: 100;
+}
+
+.gnav__list{
+  display: flex;
+	justify-content: center;
+  padding: 0;
+}
+
+.gnav__item {
+   font-size: 1.5rem;
+   text-align: center;
+}
+
+.gnav__item a{
+  color: var(--light-main-color);
+}
+
+.gnav__link{
+  display: block;
+}
+
+/* header */
+/* --------------------------------- */
+/* --------------------------------- */
+/* hamburger */
+
+
+.hamburger .btn-gNav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 12;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  
+  .hamburger .btn-gNav span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  
+  .hamburger .btn-gNav span:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger .btn-gNav span:nth-child(2) {
+    top: 10px;
+  }
+  
+  .hamburger .btn-gNav span:nth-child(3) {
+    top: 20px;
+  }
+  
+  .hamburger .btn-gNav.open span:nth-child(1) {
+    background: #ffffff;
+    top: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger .btn-gNav.open span:nth-child(2),
+  .hamburger .btn-gNav.open span:nth-child(3) {
+    top: 6px;
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  /* hamburger */
+  /* --------------------------------- */
+  
+  /* --------------------------------- */
+  /*----- footer -----*/
+  
+  .footer{
+    width: 100%;
+    height: auto;
+    background-color:var(--dark-main-color);
+    color: var(--text-bright-color);
+    bottom: 0; /*下に固定*/
+    margin-top: 3rem;
+  }
+  
+  .foot__box{
+    display: flex;
+  }
+  
+  
+  /* footA */
+  
+  .footA {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+  
+  .footA__text{
+    text-align: left!important;
+    margin-left: 1rem;
+    letter-spacing: 0.2rem;
+    color: var(--text-bright-color);
+  }
+  
+  .footA__text__title{
+    margin-top:0 ;
+    margin-bottom: 2rem;
+    font-family:'Montserrat',sans-serif;  
+    font-size: 2rem;
+  }
+  
+  .footA a {
+    color: var(--text-bright-color);
+  }
+  
+  .footA .sns__list {
+    justify-content: flex-start;
+  }
+  
+  /* footA */
+  
+  /* footB */
+  
+  .footB {
+    width: 50%;
+  }
+  
+  .footB__list__box{
+    display: flex;
+  }
+  
+  .footB__list {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footB__item a {
+    display: block;
+    padding: 5px;
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* footC */
+  
+  .footC {
+    border-top: solid 1px currentColor;
+    padding-top: 3rem;
+    text-align: center;
+    font-family:'Montserrat',sans-serif;  
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  
+/*-----footer-----*/
+/* --------------------------------- */

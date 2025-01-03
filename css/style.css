@@ -1,0 +1,292 @@
+:root {
+  --main-color: #B4CBD9;
+  --accent-color: #b00000;
+  --dark-main-color: #333;
+  --light-main-color: #fff;
+  --gray-main-color: #ececec;
+  --large-width: 1000px;
+  --middle-width: 800px;
+  --small-width:600px;
+}
+
+.jp{
+  visibility: hidden;
+}
+
+.jp1{
+  margin-top: -25rem;
+}
+
+.jp2{
+
+  margin-top: -19rem;
+
+}
+
+/* --------------------------------- */
+/* conA */
+
+.conA {
+  position: relative;
+  overflow: hidden;
+}
+
+.conA,
+.conA__image{
+  width: 100vw;
+  min-height: 1080px;
+  height: 100%;
+}
+
+.conA__image{
+
+    position: absolute;
+    top: 0;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: anime 10s 0s infinite;
+    z-index: -1;
+    opacity: 0;
+}
+
+.img1 {
+  background-image: url(../img/top__viewA.png);
+}
+.img2 {
+  background-image: url(../img/top__viewB.png);
+  animation-delay: 5s;
+}
+
+@keyframes anime {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+  }
+  60% {
+      opacity: 0;
+
+      z-index: 10;
+}
+  100% {
+      opacity: 0;
+  }
+}
+
+
+/* conA */
+/* --------------------------------- */
+/* conB */
+
+.title,
+.subtitle{
+  text-transform: capitalize;
+  font-family: "playfair-display", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.title{
+  font-size: 60px;
+}
+
+.subtitle{
+  font-size: 30px;
+}
+
+.conB__text h2,
+.conB__text p{
+  text-align: left;
+}
+
+
+
+/* conB*/
+/* --------------------------------- */
+/* conC */
+
+.conC__text h2,
+.conC__text p{
+  text-align: left;
+}
+
+.more{
+  text-align: center;
+  font-family: "playfair-display", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.history__cap__title{
+  font-size: 60px;
+}
+
+.history__cap__title,
+.history_cap{
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.right{
+  text-align: right;
+}
+
+.left{
+  text-align: left;
+}
+
+.history__item {
+  display: block;
+  max-width: 100vw!important;
+  width: 100%;
+}
+
+/* 偶数のみ反転 */
+.history__item:nth-child(even) {
+ margin: 0 39rem;
+}
+
+.history__img,
+.history__item {
+ width: 40%;
+}
+
+.history__img{
+  margin: 0 -1rem;
+}
+
+.history__item {
+ margin: 0 3rem;
+}
+
+
+/* oval */
+.history__item:before {
+  border-radius: 50%;
+
+  content: "";
+  width: 8px;
+  height: 8px;
+
+  background: var(--dark-main-color);
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+
+/* line */
+.history:before {
+  content: "";
+  width: 1px;
+  height: 200%;
+  background: var(--dark-main-color);
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+/* lineの先 */
+.history__item:last-child {
+  padding-bottom: 15px;
+}
+
+.history__item:last-child:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: none;
+  position: absolute;
+  transform: translateX(-50%) rotate(-45deg);
+  border-left: 1px solid var(--dark-main-color);
+  border-bottom: 1px solid var(--dark-main-color);
+  bottom: 0;/* lineの先の位置 */
+}
+
+
+/* line + ovalの位置調整 */
+.history::before,
+.history__item:before,
+.history__item:last-child:after{
+  left: 50%;
+}
+
+
+/* conc */
+/* --------------------------------- */
+/* conD */
+
+.conD{
+  background-image: url(../img/photoA.png);
+  width: 100vw;
+  min-height: 1000px;
+  top: 0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.conD__text{
+  width: 60%;
+  display: block;
+  text-align: left!important;
+  color: var(--light-main-color);
+  margin: 0 auto;
+  position: absolute;
+	top: 20%;
+  left: 20%;
+  
+}
+
+/* conD */
+/* --------------------------------- */
+/* conE */
+
+.conE__subtitle{
+  text-align: center;
+}
+
+.conE__box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.conE__image{
+  width:25% ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* conE */
+/* --------------------------------- */
+/* conG */
+
+.conG{
+  margin: 10rem 0;
+}
+
+.slider{
+  overflow: hidden;
+}
+
+.slick-img{
+  height: 350px;
+}
+
+.slick-img img{
+  width: 130%;
+}
+/* conG */
+/* --------------------------------- */
