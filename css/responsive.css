@@ -14,29 +14,68 @@
 /* phoneのときの制御 */
 @media (max-width:599px) {
 
-    h1 {
-      font-size: 36px;
-    }
-  
-    h2 {
-      font-size: 18px;
-    }
-  
-    p {
-      font-size: 14px;
-    }
-  
-    .container {
-      padding: 3rem!important;
-  }
-  
+h1 {
+  font-size: 36px;
+  text-align: center!important;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center!important;
+}
+
+p {
+  font-size: 14px;
+  text-align: center!important;
+}
+
+.container {
+  padding: 3rem!important;
+}
+
+/* --------------------------------- */
+/* conA */
+
+.conA,.conA__image{
+min-height: 820px!important;
+}
+
+.img1 {
+  background-image: url(../img/topA.png)!important;
+}
+.img2 {
+  background-image: url(../img/topB.png)!important;
+}
+
+/* conA */
+/* --------------------------------- */
+/* conB */
+
+.title, .subtitle {
+  text-align: center!important;
+  line-height: 1;
+  font-size: 40px!important;
+}
+
+
+
+/* conB*/
+/* --------------------------------- */
+/* conC */
+
   /* ------------------- */
 /* history */
+
+
 
 .history {
   position: relative;
 }
 
+.history__img, .history__item {
+  width: 100%!important;
+  margin: 0!important;
+}
 .history__item {
   max-width: 450px;
   margin: 3rem;
@@ -59,11 +98,39 @@
   padding: 0;
 }
 
+/* line */
+.history:before {
+  content: "";
+  width: 1px;
+  height: 100%!important;
+  background: var(--dark-main-color);
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+/* lineの先 */
+.history__item:last-child {
+  padding-bottom: 15px;
+}
+
+.history__item:last-child:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: none;
+  position: absolute;
+  transform: translateX(-50%) rotate(-45deg);
+  border-left: 1px solid var(--dark-main-color);
+  border-bottom: 1px solid var(--dark-main-color);
+  bottom: 0;/* lineの先の位置 */
+}
+
+
 /* line + ovalの位置調整 */
 .history__item:before,
 .history:before,
 .history__item:last-child:after{
-  left: 5%;
+  left: 5%!important;
 }
 
 
@@ -73,106 +140,48 @@
 /* history */
 /* ------------------- */ 
 
-    /* --------------------------------- */
-    /* conF img 画像を重ねるの設定 */
-    .hidden-view{
-      display: none;
-    }
-  
-    .more-btn {
-      display: contents;
-      font-weight: bold;
-    }
-    .hidden-view.open{
-      display: block;
-    }
-    .more-btn::before{
-      content: "もっと見る";
-    }
-    .hidden-view.open + .more-btn::before{
-      content: "閉じる";
-    }
-  
-    .conF {
-      height: 27rem;
-    }
-  
-    .conF__img{
-      position: absolute;
-      top: 35px;
-    }
-  
-    .conF__text{
-      height: auto;
-      position: absolute;
-      top: 60px;
-      left: 75px;
-    }
-  
-    /* conF img 画像を重ねるの設定 */
-  /* --------------------------------- */
-  
-  /* --------------------------------- */
-  /* slider */
-  
-  .card-group {
-    display:flex;
-    flex-flow: column;
-  
-  }
-  .card {
-    width:100%;
-    margin-bottom: 3rem;
-  }
-  
-  .card-group > :nth-child(2n) {
-    margin-left: 0;
-  
-  }
-  
-  .card-group3 {
-    display:flex;
-    flex-flow: column;
-  
-  }
-  .card3 {
-    width:100%;
-    margin-bottom: 3rem;
-  }
-  
-  .card-group3 > :nth-child(n+4) {
-    margin-top: 0;
-  
-  }
-  
-  .card-group3 > :not(:nth-child(3n-2)){
-    margin-left: 0;
-  }  
-  
-  /* --------------------------------- */
-  
-  .case__item,
-  .case__item:nth-child(odd)  {
-    display: flex;
-    flex-flow: wrap column-reverse;
-  }
-  
-  .case__body {
-    text-align: center;
-    width: 100%;
-    padding: 0;
-  
-  }
-  
-  .case__item__text{
-    margin: 0;
-  }
-  
-  .case__item__img{
-    width: 100%;
-  }
-  
-  /* slider */
+/* conc */
+/* --------------------------------- */
+/* conD */
+
+.conD{
+  background-image: url(../img/photoA__phone.png)!important;
+  background-color: var(--dark-main-color);
+  min-height: 1380px!important;
+}
+
+.conD__text{
+  text-align: center!important;
+  width: 80%!important;
+  top:0!important;
+  left: 12%!important;
+}
+
+/* conD */
+/* --------------------------------- */
+/* conE */
+
+.conE .container{
+  margin: 0;
+  padding: 0!important;
+}
+
+/* conE */
+/* --------------------------------- */
+/* conG */
+
+.slider{
+  height: 80px;
+}
+
+.slick-img img {
+width: 100%!important;
+}
+
+/* conG */
+/* --------------------------------- */
+
+    
   /* --------------------------------- */
   
   /* --------------------------------- */
@@ -184,7 +193,6 @@
   .gnav {
       position: fixed;
       top: 0;
-      right: -100%;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.8);
@@ -193,6 +201,7 @@
       z-index: 1;
       padding-top: 50px;
       transition: .3s;
+      display: none;
   }
   
   .gnav.open {
@@ -206,7 +215,6 @@
       display: block;
       flex-direction: column;
       text-align: center;
-      /*justify-content: center;*/
   }
   
   .gnav__item {
@@ -278,7 +286,8 @@
         font-size: 18px;
     }
   
-    .btn-gNav {
+    .btn-gNav,
+    .title br {
       display: none;
     }
   

@@ -87,7 +87,7 @@ div[class$="__text"],
 .hamburger .btn-gNav {
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 36px;
     width: 30px;
     height: 24px;
     z-index: 12;

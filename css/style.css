@@ -10,17 +10,7 @@
 }
 
 .jp{
-  visibility: hidden;
-}
-
-.jp1{
-  margin-top: -25rem;
-}
-
-.jp2{
-
-  margin-top: -19rem;
-
+  display: none;
 }
 
 /* --------------------------------- */
@@ -43,7 +33,7 @@
     position: absolute;
     top: 0;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     animation: anime 10s 0s infinite;
     z-index: -1;
@@ -181,7 +171,7 @@
 .history:before {
   content: "";
   width: 1px;
-  height: 200%;
+  height: 110rem;
   background: var(--dark-main-color);
   position: absolute;
   transform: translateX(-50%);

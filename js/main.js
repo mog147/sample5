@@ -1,28 +1,47 @@
 $(function(){
 
-    //表示非表示切替
-    $("#EN").on("click",function(){
+  //表示非表示切替
+  $("#EN").on("click",function(){
 
-            // 表示の場合の処理
-            $(".en").css({'visibility': 'visible'});
-            $(".jp").css({'visibility': 'hidden'});
-    
-    })
+          // 表示の場合の処理
+          $(".en").css({'display': 'block'});
+          $(".jp").css({'display': 'none'});
+  
+  })
 });
 
 $(function(){
 
-    //表示非表示切替
-    $("#JP").on("click",function(){
+  //表示非表示切替
+  $("#JP").on("click",function(){
 
-        $(".en").css({'visibility': 'hidden'});
-        $(".jp").css({'visibility': 'visible'});
+      $(".jp").css({'display': 'block'});
+      $(".en").css({'display': 'none'});
+      
 
-    })
-    
+  })
+  
 });
 
+if(window.matchMedia("(max-width: 768px)").matches){
+    // ウィンドウサイズが 768px以下の場合のコードをここに
 
+      // スライド開く
+      $(function(){
+        $('.btn-gNav').click(function() {
+            $('.gnav').slideToggle();
+  
+        });
+      });
+    
+      // スライド閉じる
+      $(function(){
+          $('.gnav').click(function() {
+              $('.gnav').hide();
+          });
+      });
+
+  }
 
 $(function(){
     $('.slider').slick({
