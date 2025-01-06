@@ -263,6 +263,33 @@
 /* --------------------------------- */
 /* conG */
 
+.conG__box{
+  display: flex; 
+}
+
+.conG__text{
+  position: relative;
+  text-align: left!important;
+}
+
+.conG__text img{
+  position: absolute;
+  top:68%;
+  left: 42%;
+  width:50%;
+  height: fit-content;
+}
+
+.conG__image{
+  margin: 8rem 0;
+  width:50%;
+  height: fit-content;
+}
+
+/* conG */
+/* --------------------------------- */
+/* conI */
+
 .conI{
   margin: 10rem 0;
 }
@@ -278,5 +305,5 @@
 .slick-img img{
   width: 130%;
 }
-/* conG */
+/* conI */
 /* --------------------------------- */
