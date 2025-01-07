@@ -103,8 +103,9 @@
 /* --------------------------------- */
 /* conC */
 
-.conC .container{
-  margin: 0 3rem;
+.history .container{
+  width: var(--small-width);
+  margin: 0 auto;
 }
 
 .conC__text h2,
@@ -137,25 +138,27 @@
 
 .right{
   text-align: right;
-  width: 350px;
+  width: 275px;
+  margin: 0;
 }
 
 .left{
   text-align: left;
-  width: 350px;
-  margin:0 56% ;
+  width: 275px;
+  margin:0 120% ;
 }
 
 .history__item {
   display: block;
   max-width: 100vw!important;
-  width: 100%;
+  width: 275px;
 }
 
 .history__img {
  max-width: 100%;
  display: block;
 }
+
 
 
 

@@ -52,10 +52,17 @@ min-height: 820px!important;
 /* --------------------------------- */
 /* conB */
 
-.title, .subtitle {
+.title {
   text-align: center!important;
   line-height: 1;
   font-size: 40px!important;
+}
+
+.subtitle{
+  text-align: center!important;
+  line-height: 1;
+  font-size: 14px!important;
+
 }
 
 
@@ -67,8 +74,8 @@ min-height: 820px!important;
   /* ------------------- */
 /* history */
 
-.conC .container{
-  margin: 0!important;
+.history .container{
+  width: 100%!important;;
 }
 
 
@@ -235,9 +242,13 @@ min-height: 820px!important;
   left: 230px!important;
 }
 
-
 /* conH */
 /* --------------------------------- */
+/* conK */
+
+.conK__box{
+  min-height: 630px!important;
+}
   
   /* --------------------------------- */
   /* header */
