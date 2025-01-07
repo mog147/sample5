@@ -155,16 +155,9 @@
 .history__img {
  max-width: 100%;
  display: block;
- padding: -3rem;
 }
 
-.history__item:nth-child(odd){
 
-}
-
-.history__item:nth-child(even){
-
-}
 
 
 /* oval */
