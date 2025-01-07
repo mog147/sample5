@@ -145,81 +145,15 @@ div[class$="__text"],
   .footer{
     width: 100%;
     height: auto;
-    background-color:var(--dark-main-color);
     color: var(--text-bright-color);
     bottom: 0; /*下に固定*/
     margin-top: 3rem;
   }
   
-  .foot__box{
-    display: flex;
-  }
-  
-  
-  /* footA */
-  
-  .footA {
-    width: 50%;
-    margin-bottom: 3rem;
-  }
-  
-  .footA__text{
-    text-align: left!important;
-    margin-left: 1rem;
-    letter-spacing: 0.2rem;
-    color: var(--text-bright-color);
-  }
-  
-  .footA__text__title{
-    margin-top:0 ;
-    margin-bottom: 2rem;
-    font-family:'Montserrat',sans-serif;  
-    font-size: 2rem;
-  }
-  
-  .footA a {
-    color: var(--text-bright-color);
-  }
-  
-  .footA .sns__list {
-    justify-content: flex-start;
-  }
-  
-  /* footA */
-  
-  /* footB */
-  
-  .footB {
-    width: 50%;
-  }
-  
-  .footB__list__box{
-    display: flex;
-  }
-  
-  .footB__list {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .footB__item a {
-    display: block;
-    padding: 5px;
-    color: inherit;
-    text-decoration: none;
-    letter-spacing: 0.3rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* footC */
-  
-  .footC {
+  .foot {
     border-top: solid 1px currentColor;
     padding-top: 3rem;
     text-align: center;
-    font-family:'Montserrat',sans-serif;  
     font-size: 0.8rem;
     letter-spacing: 0.2rem;
   }

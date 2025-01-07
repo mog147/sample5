@@ -342,6 +342,10 @@ min-height: 820px!important;
     .title br {
       display: none;
     }
+
+    .slider{
+      height: 174px!important;
+    }
   
   }
   

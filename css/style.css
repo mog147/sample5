@@ -103,6 +103,10 @@
 /* --------------------------------- */
 /* conC */
 
+.conC .container{
+  margin: 0 3rem;
+}
+
 .conC__text h2,
 .conC__text p{
   text-align: left;
@@ -144,11 +148,6 @@
   width: 100%;
 }
 
-/* 偶数のみ反転 */
-.history__item:nth-child(even) {
- 
-}
-
 .history__img {
  margin: 0 -3rem;
 }
@@ -172,7 +171,7 @@
 .history:before {
   content: "";
   width: 1px;
-  height: 303%;
+  height: 200%;
   background: var(--dark-main-color);
   position: absolute;
   transform: translateX(-50%);
@@ -274,7 +273,7 @@
 
 .conG__text img{
   position: absolute;
-  top:68%;
+  top:82%;
   left: 42%;
   width:50%;
   height: fit-content;
@@ -360,13 +359,9 @@ transform: rotate(-45deg);
 /* --------------------------------- */
 /* conI */
 
-.conI{
-
-}
-
 .slider{
   overflow: hidden;
-  height: 300px;
+  height: 250px;
 }
 
 .slick-img{
@@ -407,3 +402,57 @@ transform: rotate(-45deg);
 
 /* conI */
 /* --------------------------------- */
+/* conK */
+
+.conK p,
+.conK table{
+  color: var(--light-main-color);
+  text-align: center;
+  margin:0 auto;
+}
+
+.conK table{
+  padding-top: 1rem;
+}
+
+.conK__box{
+  background-image: url(../img/frm.jpg);
+  min-height: 550px;
+  top: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  min-width: 9rem;
+  display: block;
+}
+  
+input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background: var(--gray-main-color);
+  color: var(--dark-main-color)
+}
+
+  textarea {
+    height: 10rem;
+    resize: vertical;
+  }
+
+  .frm__btn{
+    width: 50%;
+  }
+
+
+/* conK */
+/* --------------------------------- */
+/* conL */
