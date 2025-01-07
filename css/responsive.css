@@ -67,6 +67,9 @@ min-height: 820px!important;
   /* ------------------- */
 /* history */
 
+.conC .container{
+  margin: 0!important;
+}
 
 
 .history {

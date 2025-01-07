@@ -112,6 +112,10 @@
   text-align: left;
 }
 
+.history{
+  position: relative;
+}
+
 .more{
   text-align: center;
   font-family: "playfair-display", serif;
@@ -149,7 +153,17 @@
 }
 
 .history__img {
- margin: 0 -3rem;
+ max-width: 100%;
+ display: block;
+ padding: -3rem;
+}
+
+.history__item:nth-child(odd){
+
+}
+
+.history__item:nth-child(even){
+
 }
 
 
@@ -171,7 +185,7 @@
 .history:before {
   content: "";
   width: 1px;
-  height: 200%;
+  height: 100%;
   background: var(--dark-main-color);
   position: absolute;
   transform: translateX(-50%);
@@ -191,16 +205,16 @@
   transform: translateX(-50%) rotate(-45deg);
   border-left: 1px solid var(--dark-main-color);
   border-bottom: 1px solid var(--dark-main-color);
+  bottom: 0;
 }
 
 
 /* line + ovalの位置調整 */
-.history::before,
-.history__item:before,
-.history__item:last-child:after{
-  left: 50%;
+.history__item:before, 
+.history:before, 
+.history__item:last-child:after {
+  left: 50% ;
 }
-
 
 /* conc */
 /* --------------------------------- */
