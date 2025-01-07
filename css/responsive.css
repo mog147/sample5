@@ -170,6 +170,33 @@ min-height: 820px!important;
 /* --------------------------------- */
 /* conG */
 
+.conG__box{
+  display: block!important;
+}
+
+.conG__box img{
+  width: 100%!important;
+  top: 100%!important;
+  left: 50%!important;
+  
+}
+.conG__image{
+  width: 100%;
+  text-align: center;
+}
+
+/* conG */
+/* --------------------------------- */
+/* conI */
+
+.title2{
+padding: 3% 3% 3% 3%!important;
+}
+
+/* conI */
+/* --------------------------------- */
+/* conH */
+
 .slider{
   height: 80px;
 }
@@ -178,8 +205,8 @@ min-height: 820px!important;
 width: 100%!important;
 }
 
-/* conG */
-/* --------------------------------- */
+
+
 
     
   /* --------------------------------- */

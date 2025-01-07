@@ -124,14 +124,18 @@
   font-family: "Lato", serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 .right{
   text-align: right;
+  width: 350px;
 }
 
 .left{
   text-align: left;
+  width: 350px;
+  margin:0 56% ;
 }
 
 .history__item {
@@ -142,20 +146,11 @@
 
 /* 偶数のみ反転 */
 .history__item:nth-child(even) {
- margin: 0 39rem;
+ 
 }
 
-.history__img,
-.history__item {
- width: 40%;
-}
-
-.history__img{
-  margin: 0 -1rem;
-}
-
-.history__item {
- margin: 0 3rem;
+.history__img {
+ margin: 0 -3rem;
 }
 
 
@@ -177,7 +172,7 @@
 .history:before {
   content: "";
   width: 1px;
-  height: 110rem;
+  height: 303%;
   background: var(--dark-main-color);
   position: absolute;
   transform: translateX(-50%);
@@ -197,7 +192,6 @@
   transform: translateX(-50%) rotate(-45deg);
   border-left: 1px solid var(--dark-main-color);
   border-bottom: 1px solid var(--dark-main-color);
-  bottom: 0;/* lineの先の位置 */
 }
 
 
@@ -302,6 +296,7 @@
   width: 96%;
   max-width: 900px;
   margin:0 auto;
+  padding: 0;
 }
 
 .accordion-area li{
@@ -366,11 +361,12 @@ transform: rotate(-45deg);
 /* conI */
 
 .conI{
-  margin: 10rem 0;
+
 }
 
 .slider{
   overflow: hidden;
+  height: 300px;
 }
 
 .slick-img{
