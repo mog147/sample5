@@ -212,29 +212,6 @@ min-height: 820px!important;
 .title2{
   padding: 3% 3% 3% 3%!important;
   }
-  
-  .sns__list{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .sns__item a {
-    /* aタグにmarginは効かないから一度ブロックにする必要あり  */
-    text-decoration: none;
-    font-size: 42px;
-    color: var(--dark-main-color);
-  }
-  
-  .sns__item:last-child a {
-    margin-right: 0;
-  }
-  
-  .sns__item a:hover{
-      background-color:rgba(51,51,51,0.1) ;
-  }
 
 
 /* conI */
