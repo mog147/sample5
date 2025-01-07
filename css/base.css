@@ -19,8 +19,6 @@ body {
     letter-spacing: 0.1rem;
     color: var(--dark-main-color);
     background-color:var(--gray-main-color);
-    overflow: hidden;
-    
 }
 
 .container {
