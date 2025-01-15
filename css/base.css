@@ -22,6 +22,10 @@ body {
     overflow-x: hidden; 
 }
 
+.wrapper{
+  overflow:hidden;
+}
+
 .container {
     margin: 5rem 10rem; 
 }
