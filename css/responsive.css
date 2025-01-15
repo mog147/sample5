@@ -210,17 +210,10 @@ min-height: 820px!important;
   display: block!important;
 }
 
-.conG__box img{
-  width: 100%!important;
-  top: 100%!important;
-  left: 0!important;
-  
-}
 .conG__image{
   width: 100%;
   text-align: center;
   margin-bottom: 0!important;
-
 }
 
 /* conG */

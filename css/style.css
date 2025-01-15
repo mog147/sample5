@@ -321,22 +321,24 @@
 }
 
 .conG__text{
-  position: relative;
   text-align: left!important;
-}
-
-.conG__text img{
-  position: absolute;
-  top:62%;
-  left: 42%;
-  width:50%;
-  height: fit-content;
+  flex-basis:50%; 
 }
 
 .conG__image{
-  margin: 8rem 0;
-  width:50%;
-  height: fit-content;
+  display: block;
+  flex-basis:50%; 
+}
+
+.conG__image2{
+  width: 55%;
+  height: auto;
+}
+
+.conG__image1{
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
 }
 
 /* conG */
