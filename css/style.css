@@ -16,6 +16,12 @@
 /* --------------------------------- */
 /* conA */
 
+.conB a.anchor{
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
 .conA {
   position: relative;
 }
@@ -50,6 +56,7 @@
 
 .conA__box{
   display: block;
+
 }
 
 
@@ -64,7 +71,7 @@
   position: absolute;
   top: 15%;
   left: 70%;
-  z-index: 100;
+  z-index: 99;
 }
 
 .conA__box p{

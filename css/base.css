@@ -42,6 +42,12 @@ a {
     text-decoration: none;
 }
 
+a.anchor{
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
 
 /** クラス指定の末尾の文字列が[__text]だったら*/
 div[class$="__text"],
@@ -64,15 +70,25 @@ div[class$="__text"],
     z-index: 100;
 }
 
-.gnav__list{
+.gnav{
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.gnav__list,
+.lang{
   display: flex;
 	justify-content: center;
   padding: 0;
+  margin: 0;
 }
 
 .gnav__item {
    font-size: 1.5rem;
    text-align: center;
+   padding-left: 2rem ;
 }
 
 .gnav__item a{
@@ -82,6 +98,21 @@ div[class$="__text"],
 .gnav__link{
   display: block;
 }
+
+.lang{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.gnav__list li+ li,
+.lang li+ li {
+  border-left: 1px solid var(--light-main-color);
+}
+
+
+
+
 
 /* header */
 /* --------------------------------- */
@@ -100,6 +131,7 @@ div[class$="__text"],
     cursor: pointer;
     -webkit-transition: all 400ms;
     transition: all 400ms;
+    z-index: 1000;
   }
   
   .hamburger .btn-gNav span {
