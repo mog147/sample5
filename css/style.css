@@ -16,11 +16,7 @@
 /* --------------------------------- */
 /* conA */
 
-.conB a.anchor{
-  display: block;
-  padding-top: 100px;
-  margin-top: -100px;
-}
+
 
 .conA {
   position: relative;
@@ -32,26 +28,46 @@
   height: 150vh;
 }
 
-.conA__image{
-    min-height:100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: anime 10s 0s infinite;
-    z-index: -1;
-    opacity: 0;
+.loading {
+  width: 100vw;
+  height: 120vh;
+  transition: all 1s;
+  background-image: url(../img/top__viewA.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
 }
 
-.img1 {
-  background-image: url(../img/top__viewA.png);
+
+.loading.is-active {
+  opacity: 0;
+  visibility: hidden;
 }
-.img2 {
+
+.loading-animation {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
   background-image: url(../img/top__viewB.png);
-  animation-delay: 5s;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  padding-bottom: 30%;
+}
+
+.loading-animation.is-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .conA__box{
@@ -98,25 +114,6 @@
   
 }
 
-
-@keyframes anime {
-  0% {
-      opacity: 1;
-  }
-  50% {
-      opacity: 1;
-  }
-  60% {
-      opacity: 0;
-
-      z-index: 10;
-}
-  100% {
-      opacity: 0;
-  }
-}
-
-
 /* conA */
 /* --------------------------------- */
 /* conB */
@@ -146,6 +143,12 @@
 .conB__text h2,
 .conB__text p{
   text-align: left;
+}
+
+.conB a.anchor{
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px;
 }
 
 
