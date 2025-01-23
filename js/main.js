@@ -96,7 +96,7 @@ $(function(){
 $('.title2').on('click', function() {//タイトル要素をクリックしたら
 	$('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
     
-	var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+	var findElm = $(this).siblings(".box");//タイトル直後のアコーディオンを行うエリアを取得
     
 	if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
 		$(this).removeClass('close');//クラス名を除去    
@@ -106,26 +106,6 @@ $('.title2').on('click', function() {//タイトル要素をクリックした�
 		$(findElm).slideDown(500);//アコーディオンを開く
 	}
 });
-
-
-
-// -----------------------------
-
- //アコーディオンをクリックした時の動作
- $('.title2-2').on('click', function() {//タイトル要素をクリックしたら
-	$('.box2').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
-    
-	var findElm = $(this).siblings(".box2");//タイトル直後のアコーディオンを行うエリアを取得
-    
-	if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
-		$(this).removeClass('close');//クラス名を除去    
-	}else{//それ以外は
-		$('.close').removeClass('close'); //クラス名closeを全て除去した後
-		$(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
-		$(findElm).slideDown(500);//アコーディオンを開く
-	}
-});
-
 
 
 // -----------------------------
