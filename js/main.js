@@ -158,3 +158,30 @@ $(function () {
   webStorage();
   
 });
+
+
+// スクロールするとicon色変更
+if (window.matchMedia("(min-width: 768px)").matches) {
+
+
+  $(function () {
+  
+    $(window).on("scroll", function () {
+      const sliderHeight = $(".conB").height();
+  
+        if (sliderHeight - 30 < $(this).scrollTop()) {
+  
+          $(".js-header").addClass("headerColorScroll");
+          $(".js-header2").addClass("headerColorScroll2");
+  
+        } else {
+  
+          $(".js-header").removeClass("headerColorScroll");
+          $(".js-header2").removeClass("headerColorScroll2");
+
+        }
+  
+      });
+  
+    })
+  };
