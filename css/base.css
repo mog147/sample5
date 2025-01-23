@@ -70,13 +70,6 @@ div[class$="__text"],
     z-index: 100;
 }
 
-.gnav{
-  display: flex!important;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-}
-
 .gnav__list,
 .lang{
   display: flex;

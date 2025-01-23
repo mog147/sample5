@@ -1,3 +1,46 @@
+if(window.matchMedia("(max-width: 768px)").matches){
+  // ウィンドウサイズが 768px以下の場合のコードをここに
+
+    // スライド開く
+    $(function(){
+      $(".btn-gNav").click(function() {
+
+        if ($(".gnav").hasClass('open')) {
+
+          $(".gnav").removeClass('open');
+          $(".gnav").hide();
+
+        } else {
+
+          $(".gnav").addClass('open');
+          $(".gnav").show();
+
+        }          
+
+      });
+    });
+
+      // スライド開く
+      $(function(){
+        $(".gnav").click(function() {
+  
+          if ($(".gnav").hasClass('open')) {
+  
+            $(".gnav").removeClass('open');
+            $(".gnav").hide();
+  
+          } else {
+  
+            $(".gnav").addClass('open');
+            $(".gnav").show();
+  
+          }          
+  
+        });
+      });
+    
+    }
+
 $(function(){
 
   //表示非表示切替
@@ -23,25 +66,7 @@ $(function(){
   
 });
 
-if(window.matchMedia("(max-width: 768px)").matches){
-    // ウィンドウサイズが 768px以下の場合のコードをここに
 
-      // スライド開く
-      $(function(){
-        $('.btn-gNav').click(function() {
-            $('.gnav').slideToggle();
-  
-        });
-      });
-    
-      // スライド閉じる
-      $(function(){
-          $('.gnav').click(function() {
-              $('.gnav').hide();
-          });
-      });
-
-  }
 
 $(function(){
     $('.slider').slick({
