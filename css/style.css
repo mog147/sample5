@@ -438,11 +438,11 @@ transform: rotate(-45deg);
 }
 
 .slick-img{
-  height: 350px;
+  height: 140px;
 }
 
 .slick-img img{
-  width: 150%;
+  width: 100%;
 }
 
   
